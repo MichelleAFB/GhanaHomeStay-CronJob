@@ -1,12 +1,12 @@
 
 
+
 print("hello")
 
+import requests
+import json
 
-#import requests
-#import json
+response=requests.get('https://ghanahomestayserver.onrender.com/')
 
-#response=requests.get('https://ghanahomestayserver.onrender.com/')
-
-#for data in response.json()['apps']:
-  #  print(data)
+for data in response.json()['apps']:
+    print(data)
